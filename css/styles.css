@@ -61,7 +61,7 @@ img {
     height: auto;
 }
 
-/* ----------------------------------------------------------------HEADER*/
+/*----------------------------------HEADER*/
 .header {
     border-bottom: 1px solid #E7E9FC;
 }
@@ -172,14 +172,15 @@ img {
     margin-right: auto;
     text-align: center;
     max-width: 1440px;
-    height: 600px;
-    background-image:linear-gradient(to right, rgba(0 ,0 ,0, 0.5),
-     rgba(0, 0, 0, 0.5)),
+    background-image:linear-gradient(to right, rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
      url('../images/people-office.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+        
+
 
 .section-title {
     color: var(--background-white-color);
@@ -326,24 +327,22 @@ width: calc((100% - 48px) / 3);
 
 .site-icon {
     width: 40px;
-    height: 40px;
-    background: #4D5AE5;
-    border-radius: 50%;
-    cursor: pointer;
-    padding: 12px;
-    
+    height: 40px;   
 }
-
-
 .site-link{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #4D5AE5;
+    border-radius: 50%;
+  
     
 }
 
-.site-icon:hover,
-.site-icon:focus {
+.site-link:hover,
+.site-link:focus {
     background-color: var(--color-hover);
 }
 
@@ -376,18 +375,18 @@ width: calc((100% - 48px) / 3);
 
 .item {
     flex-basis: calc((100% - 2 * 24px) / 3);
-    
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);   
 }
 
+.link-card {
+    display: block;
+}
 
 .link-card:hover,
 .link-card:focus {
-    
-    display: block;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
                 0px 1px 1px rgba(46, 47, 66, 0.16),
-                0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
+                0px 2px 1px rgba(46, 47, 66, 0.08)
 }
 
 .portfolio-description {
@@ -449,19 +448,15 @@ width: calc((100% - 48px) / 3);
     gap: 24px;
 }
 .customers-item {
-    display: flex;
     width: 168px;
-    height: 88px;
-    border: 1px solid var(--color-border);
-    border-radius: 4px;   
+    height: 88px;   
 }
 .customers-link {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
-    cursor: pointer; 
+    height: 100%; 
     border: 1px solid var(--color-border);
     border-radius: 4px;
     fill: var(--color-border); 
@@ -470,9 +465,8 @@ width: calc((100% - 48px) / 3);
 .customers-link:hover,
 .customers-link:focus {
     fill:var(--color-hover);
-    border: 1px solid var(--color-hover);
+    border-color: var(--color-hover);
 }
-
 
 /*--------------------==----------------------FOOTER */
 
@@ -521,18 +515,24 @@ width: calc((100% - 48px) / 3);
 }
 .footer-list-item {
     width: calc((100% - 3 * 16px) / 4);
-    display: flex;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
+    height: 40px;
+    
+    
 }
 .footer-link {
    display: flex;
+   width: 100%;
+   height: 100%;
+   justify-content: center;
+   align-items: center;
    fill: var(--color-second-white);
-   margin: 8px;
+   background: rgba(255, 255, 255, 0.1);
+   border-radius: 50%;
+   
    
 
 }
-.footer-list-item:hover,
-.footer-list-item:focus {
+.footer-link:hover,
+.footer-link:focus {
     background-color: #31D0AA;
 }
